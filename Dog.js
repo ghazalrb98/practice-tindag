@@ -13,6 +13,20 @@ class Dog {
       </div>
     `;
   }
+
+  getBadgeHtml() {
+    return `
+      <img class="badge" src="/images/badge-${
+        this.hasBeenLiked ? "like" : "nope"
+      }.png">`;
+  }
+
+  setBadge(isLike) {
+    this.hasBeenSwiped = true;
+    if (isLike) {
+      this.hasBeenLiked = true;
+    }
+  }
 }
 
 export default Dog;

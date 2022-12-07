@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(#fff, #f6f7fb);
+  height: 100vh;
+}
+
+.container {
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.125em;
+  height: 4.5rem;
+}
+
+#post {
+  position: relative;
+  padding: 0.5em;
+  margin: 0 auto;
+}
+
+.avatar {
+  width: 100%;
+  max-width: 600px;
+  max-height: 750px;
+  display: block;
+  border-radius: 25px;
+  object-fit: cover;
+}
+
+.info {
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  padding: 1.5em 1.125em;
+}
+
+.name {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.bio {
+  color: #b7b7b7;
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 1.5em;
+  margin-top: 1em;
+}
+
+button {
+  border: none;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: 0 10px 20px #e9e9ea;
+  padding: 2em;
+}
+
+button img {
+  width: 1.85rem;
+  display: block;
+}
+
+#reject-btn:hover,
+#reject-btn:focus {
+  background-color: #ffe7ef;
+}
+
+#like-btn:hover,
+#like-btn:focus {
+  background-color: #dbfff4;
+}

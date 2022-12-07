@@ -2,12 +2,25 @@ import dogs from "./data.js";
 import Dog from "./Dog.js";
 
 const postDiv = document.getElementById("post");
+const likeBtn = document.getElementById("like-btn");
+const rejectBtn = document.getElementById("reject-btn");
 
-document.addEventListener("click", (e) => {
-  if (e.target.id === "reject-btn") {
-  } else if (e.target.id === "like-btn") {
-  }
+likeBtn.addEventListener("click", () => {
+  setBadge(true);
 });
+
+rejectBtn.addEventListener("click", () => {
+  setBadge(false);
+});
+
+function setBadge(isLike) {
+  dog.setBadge(isLike);
+  render();
+  setTimeout(() => {
+    dog = getNewDog();
+    render();
+  }, 1500);
+}
 
 function getNewDog() {
   const newDogData = dogs.shift();

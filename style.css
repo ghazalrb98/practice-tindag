@@ -84,6 +84,8 @@ button {
   background-color: white;
   box-shadow: 0 10px 20px #e9e9ea;
   padding: 2em;
+  cursor: pointer;
+  pointer-events: all;
 }
 
 button img {
@@ -91,12 +93,10 @@ button img {
   display: block;
 }
 
-#reject-btn:hover,
-#reject-btn:focus {
+#reject-btn:hover {
   background-color: #ffe7ef;
 }
 
-#like-btn:hover,
-#like-btn:focus {
+#like-btn:hover {
   background-color: #dbfff4;
 }
